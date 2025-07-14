@@ -6,8 +6,10 @@ globalThis.console.log(module);
 // const add= require("./math")
 
 // second way to add the module or to import 
-const {add} = require("./math")
+const {add,sub,multi} = require("./math")
 console.log(add(59,180));
+console.log(sub(59,2));
+console.log(multi(59,2));
 
 
 http = require('node:http');

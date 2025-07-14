@@ -1,5 +1,16 @@
 const add = (a, m) => {
     return a + m;
 };
+const sub = (a, m) => {
+    return a - m;
+};
+const multi = (a, m) => {
+    return a * m;
+};
 
-module.exports = add;
+
+// First way to export module 
+// module.exports = add;
+
+//second way to export module
+module.exports={add,sub,multi}
