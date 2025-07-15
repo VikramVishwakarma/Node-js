@@ -51,3 +51,7 @@ console.log(parsedata,resolvepath,extname,basename,dirname);
 const os = require("os");
 
 console.log("\n"+os.platform());
+console.log("\n"+os.arch());
+
+// CRUD opertion 
+

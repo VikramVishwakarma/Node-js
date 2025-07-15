@@ -9,8 +9,8 @@ const multi = (a, m) => {
 };
 
 
-// First way to export module 
+// First way to export custom module 
 // module.exports = add;
 
-//second way to export module
+//second way to export custom module
 module.exports={add,sub,multi}
