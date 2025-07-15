@@ -36,7 +36,7 @@ console.log(__filename)
 console.log(__dirname)
 
 // Custom directory 
-const filepath = path.join("Floder","students","books")
+const filepath = path.join("Floder","students","books.js")
 console.log(filepath);
 
 const parsedata= path.parse(filepath);
@@ -46,3 +46,8 @@ const basename= path.basename(filepath);
 const dirname= path.dirname(filepath);
 
 console.log(parsedata,resolvepath,extname,basename,dirname);
+
+//Os 
+const os = require("os");
+
+console.log("\n"+os.platform());
