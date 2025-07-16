@@ -6,8 +6,11 @@ globalThis.console.log(module);
 // const add= require("./math")
 
 // second way to add the module or to import 
-const {add} = require("./math")
+const {add,sub,multi} = require("./math")
+const path = require("path")
 console.log(add(59,180));
+console.log(sub(59,2));
+console.log(multi(59,2));
 
 
 http = require('node:http');
@@ -27,3 +30,28 @@ server.listen(3000);
 // Console will print the message
 
 console.log('Server running at http://127.0.0.1:3000/');
+
+// directory 
+console.log(__filename)
+console.log(__dirname)
+
+// Custom directory 
+const filepath = path.join("Floder","students","books.js")
+console.log(filepath);
+
+const parsedata= path.parse(filepath);
+const resolvepath= path.resolve(filepath);
+const extname= path.extname(filepath);
+const basename= path.basename(filepath);
+const dirname= path.dirname(filepath);
+
+console.log(parsedata,resolvepath,extname,basename,dirname);
+
+//Os 
+const os = require("os");
+
+console.log("\n"+os.platform());
+console.log("\n"+os.arch());
+
+// CRUD opertion 
+
